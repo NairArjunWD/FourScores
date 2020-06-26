@@ -4,38 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/baseballButton"
         android:visibility="visible"
         android:text="Baseball"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:background="#FB9800"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:onClick="gone"/>
     <Button
         android:id="@+id/basketballButton"
         android:visibility="visible"
         android:text="Basketball"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:textColor="#FB0000"
+        android:background="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@+id/baseballButton"
         android:onClick="gone"/>
     <Button
         android:id="@+id/footballButton"
         android:visibility="visible"
         android:text="Football"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="#884F00"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/basketballButton"
         android:onClick="gone"/>
     <Button
         android:id="@+id/soccerButton"
         android:visibility="visible"
         android:text="Soccer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/footballButton"
         android:onClick="gone"/>
 
@@ -47,9 +55,11 @@
 
 
         <TextView
+            android:id="@+id/world"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello World!"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

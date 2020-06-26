@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         socc.setVisibility(View.GONE);
         Button restart = findViewById(R.id.resetButton);
         restart.setVisibility(View.VISIBLE);
+        TextView textV = findViewById(R.id.world);
+        textV.setVisibility(View.VISIBLE);
 
     }
 }
