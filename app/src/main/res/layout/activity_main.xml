@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/baseballButton"
         android:visibility="visible"
         android:text="Baseball"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="gone"/>
     <Button
         android:id="@+id/basketballButton"
         android:visibility="visible"
         android:text="Basketball"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/baseballButton"
         android:onClick="gone"/>
@@ -25,7 +26,7 @@
         android:id="@+id/footballButton"
         android:visibility="visible"
         android:text="Football"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/basketballButton"
         android:onClick="gone"/>
@@ -33,27 +34,37 @@
         android:id="@+id/soccerButton"
         android:visibility="visible"
         android:text="Soccer"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/footballButton"
         android:onClick="gone"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/resetButton"
-        android:text="Reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/soccerButton"
-        android:onClick="reset"
-        android:visibility="gone"/>
 
-</RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:text="Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="reset"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
