@@ -29,19 +29,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void gone (View view) {
-        Button base = findViewById(R.id.baseballButton);
-        base.setVisibility(View.GONE);
-        Button basket = findViewById(R.id.basketballButton);
-        basket.setVisibility(View.GONE);
-        Button foot = findViewById(R.id.footballButton);
-        foot.setVisibility(View.GONE);
-        Button socc = findViewById(R.id.soccerButton);
-        socc.setVisibility(View.GONE);
-        Button restart = findViewById(R.id.resetButton);
-        restart.setVisibility(View.VISIBLE);
-        TextView textV = findViewById(R.id.world);
-        textV.setVisibility(View.VISIBLE);
-
-    }
+//    public void gone (View view) {
+//        Button base = findViewById(R.id.baseballButton);
+//        base.setVisibility(View.GONE);
+//        Button basket = findViewById(R.id.basketballButton);
+//        basket.setVisibility(View.GONE);
+//        Button foot = findViewById(R.id.footballButton);
+//        foot.setVisibility(View.GONE);
+//        Button socc = findViewById(R.id.soccerButton);
+//        socc.setVisibility(View.GONE);
+//        Button restart = findViewById(R.id.resetButton);
+//        restart.setVisibility(View.VISIBLE);
+//        TextView textV = findViewById(R.id.world);
+//        textV.setVisibility(View.VISIBLE);
+//
+//    }
 }
