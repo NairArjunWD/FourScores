@@ -7,56 +7,7 @@
     android:layout_weight="1"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/baseballButton"
-        android:visibility="visible"
-        android:text="Baseball"
-        android:textColor="#000000"
-        android:background="#FB9800"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="gone"/>
-    <Button
-        android:id="@+id/basketballButton"
-        android:visibility="visible"
-        android:text="Basketball"
-        android:textColor="#FB0000"
-        android:background="#FFFFFF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/baseballButton"
-        android:onClick="gone"/>
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Four Score"
-        android:layout_toRightOf="@id/basketballButton"/>
-    <Button
-        android:id="@+id/footballButton"
-        android:visibility="visible"
-        android:text="Football"
-        android:textColor="#FFFFFF"
-        android:background="#884F00"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/title"
-        android:onClick="gone"/>
-    <Button
-        android:id="@+id/soccerButton"
-        android:visibility="visible"
-        android:text="Soccer"
-        android:textColor="#000000"
-        android:background="#FFFFFF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/footballButton"
-        android:onClick="gone"/>
-
-
-
     <LinearLayout
-        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -93,7 +44,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="Half Court"/>
+                android:text="Extra Point"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -101,7 +52,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="Basket"/>
+                android:text="Safeties/ 2 pt Conversion"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -109,7 +60,15 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="Free Throw/ Slam Dunk"/>
+                android:text="Field Goal"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="Touchdown"/>
 
 
         </LinearLayout>
@@ -151,7 +110,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="Half Court"/>
+                android:text="Extra Point"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -159,7 +118,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="Basket"/>
+                android:text="Safeties/ 2 pt Conversion"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -167,7 +126,15 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
-                android:text="Free Throw/ Slam Dunk"/>
+                android:text="Field Goal"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="Touchdown"/>
 
         </LinearLayout>
 
