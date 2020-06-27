@@ -52,6 +52,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:onClick="homeTwoPoints"
                 android:text="Safeties/ 2 pt Conversion"/>
 
             <Button
@@ -60,6 +61,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:onClick="homeThreePoints"
                 android:text="Field Goal"/>
 
             <Button
@@ -68,6 +70,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:onClick="homeSixPoints"
                 android:text="Touchdown"/>
 
 
@@ -110,6 +113,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:onClick="visitorOnePoint"
                 android:text="Extra Point"/>
 
             <Button
@@ -118,6 +122,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:onClick="visitorTwoPoints"
                 android:text="Safeties/ 2 pt Conversion"/>
 
             <Button
@@ -126,6 +131,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:onClick="visitorThreePoints"
                 android:text="Field Goal"/>
 
             <Button
@@ -134,6 +140,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:onClick="visitorSixPoints"
                 android:text="Touchdown"/>
 
         </LinearLayout>
