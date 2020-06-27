@@ -13,6 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
     Button bt_restart;
 
+    int homeTeam = 0;
+
+    int visitingTeam = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,19 +33,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-//    public void gone (View view) {
-//        Button base = findViewById(R.id.baseballButton);
-//        base.setVisibility(View.GONE);
-//        Button basket = findViewById(R.id.basketballButton);
-//        basket.setVisibility(View.GONE);
-//        Button foot = findViewById(R.id.footballButton);
-//        foot.setVisibility(View.GONE);
-//        Button socc = findViewById(R.id.soccerButton);
-//        socc.setVisibility(View.GONE);
-//        Button restart = findViewById(R.id.resetButton);
-//        restart.setVisibility(View.VISIBLE);
-//        TextView textV = findViewById(R.id.world);
-//        textV.setVisibility(View.VISIBLE);
-//
-//    }
+    public void homeOnePoint(View view) {
+        homeTeam = homeTeam + 1;
+        displayHomeScore(homeTeam);
+    }
+
+    public void displayHomeScore(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.home_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
 }
