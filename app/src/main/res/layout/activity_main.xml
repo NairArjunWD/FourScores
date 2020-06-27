@@ -16,17 +16,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_margin="16dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="Home"
                 android:textColor="#FFFFFF"
-                android:fontFamily="sans-serif-black"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -36,42 +37,42 @@
                     android:id="@+id/extraPointCountHome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_margin="16dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
                     android:text="0"
                     android:textColor="#dbd800"
-                    android:fontFamily="sans-serif-black"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_margin="16dp"
-                    android:text="0"
-                    android:textColor="#FFFFFF"
                     android:fontFamily="sans-serif-black"
-                    android:textSize="20sp"/>
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#d68f00"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_margin="16dp"
-                    android:text="0"
-                    android:textColor="#FFFFFF"
                     android:fontFamily="sans-serif-black"
-                    android:textSize="20sp"/>
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#cf2e02"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_margin="16dp"
-                    android:text="0"
-                    android:textColor="#FFFFFF"
                     android:fontFamily="sans-serif-black"
-                    android:textSize="20sp"/>
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#009cc7"
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
@@ -79,53 +80,56 @@
                 android:id="@+id/home_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_margin="10dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="0"
                 android:textColor="#FFFFFF"
-                android:fontFamily="sans-serif-black"
-                android:textSize="50sp"/>
+                android:textSize="50sp" />
 
             <Button
-                android:fontFamily="sans-serif-black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
                 android:onClick="homeOnePoint"
-                android:textColor="#dbd800"
-                android:text="Extra Point"/>
+                android:text="Extra Point"
+                android:textColor="#dbd800" />
 
             <Button
-                android:fontFamily="sans-serif-black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
                 android:onClick="homeTwoPoints"
-                android:text="Safeties/ 2 pt Conversion"/>
+                android:text="Safeties/ 2 pt Conversion"
+                android:textColor="#d68f00" />
 
             <Button
-                android:fontFamily="sans-serif-black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
                 android:onClick="homeThreePoints"
-                android:text="Field Goal"/>
+                android:text="Field Goal"
+                android:textColor="#cf2e02" />
 
             <Button
-                android:fontFamily="sans-serif-black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
                 android:onClick="homeSixPoints"
-                android:text="Touchdown"/>
+                android:text="Touchdown"
+                android:textColor="#009cc7" />
 
 
         </LinearLayout>
@@ -140,17 +144,17 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
-                android:fontFamily="sans-serif-black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_margin="16dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="Visitor"
                 android:textColor="#FFFFFF"
-                android:textSize="14sp"/>
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -160,111 +164,114 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_margin="16dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center"
                     android:text="0"
                     android:textColor="#dbd800"
-                    android:fontFamily="sans-serif-black"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_margin="16dp"
-                    android:text="0"
-                    android:textColor="#FFFFFF"
                     android:fontFamily="sans-serif-black"
-                    android:textSize="20sp"/>
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#d68f00"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_margin="16dp"
-                    android:text="0"
-                    android:textColor="#FFFFFF"
                     android:fontFamily="sans-serif-black"
-                    android:textSize="20sp"/>
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#cf2e02"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:layout_margin="16dp"
-                    android:text="0"
-                    android:textColor="#FFFFFF"
                     android:fontFamily="sans-serif-black"
-                    android:textSize="20sp"/>
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#009cc7"
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
             <TextView
-                android:fontFamily="sans-serif-black"
                 android:id="@+id/visitor_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_margin="10dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
                 android:text="0"
                 android:textColor="#FFFFFF"
-                android:textSize="50sp"/>
+                android:textSize="50sp" />
 
             <Button
-                android:fontFamily="sans-serif-black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
                 android:onClick="visitorOnePoint"
-                android:text="Extra Point"/>
+                android:text="Extra Point"
+                android:textColor="#dbd800" />
 
             <Button
-                android:fontFamily="sans-serif-black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
                 android:onClick="visitorTwoPoints"
-                android:text="Safeties/ 2 pt Conversion"/>
+                android:text="Safeties/ 2 pt Conversion"
+                android:textColor="#d68f00" />
 
             <Button
-                android:fontFamily="sans-serif-black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
                 android:onClick="visitorThreePoints"
-                android:text="Field Goal"/>
+                android:text="Field Goal"
+                android:textColor="#cf2e02" />
 
             <Button
-                android:fontFamily="sans-serif-black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
                 android:onClick="visitorSixPoints"
-                android:text="Touchdown"/>
+                android:text="Touchdown"
+                android:textColor="#009cc7" />
 
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
-        android:fontFamily="sans-serif-black"
         android:id="@+id/resetButton"
-        android:text="Reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
-        android:onClick="reset" />
-
+        android:fontFamily="sans-serif-black"
+        android:onClick="reset"
+        android:text="Reset" />
 
 
 </RelativeLayout>
