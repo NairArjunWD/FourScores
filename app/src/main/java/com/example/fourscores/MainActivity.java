@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
      */
     int visitingTeam = 0;
 
+    int homeExtraPoint = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
     public void homeOnePoint(View view) {
         homeTeam = homeTeam + 1;
         displayHomeScore(homeTeam);
+        homeExtraPoint = homeExtraPoint + 1;
+        displayExtraHomeCount(homeExtraPoint);
     }
 
     /**
@@ -120,6 +124,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayVisitorScore(int score) {
         TextView scoreView = (TextView) findViewById(R.id.visitor_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     *
+     * Display How Many Extra Points Home Team Received
+     */
+
+    public void displayExtraHomeCount(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.extraPointCountHome);
         scoreView.setText(String.valueOf(score));
     }
 
