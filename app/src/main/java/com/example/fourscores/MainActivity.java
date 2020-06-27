@@ -23,6 +23,22 @@ public class MainActivity extends AppCompatActivity {
      * Visiting Team's Score
      */
     int visitingTeam = 0;
+    /**
+     * Home Extra Point Count Increases by 1
+     */
+    int homeExtraPoint = 0;
+    /**
+     * Visiting Extra Point Count Increases by 1
+     */
+    int visitorExtraPoint = 0;
+    /**
+     * Home Safeties Point Count Increases by 1
+     */
+    int homeSafetiesPoint = 0;
+    /**
+     * Visiting Safeties Point Count Increases by 1
+     */
+    int visitorSafetiesPoint = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
     public void homeOnePoint(View view) {
         homeTeam = homeTeam + 1;
         displayHomeScore(homeTeam);
+
+        homeExtraPoint = homeExtraPoint + 1;
+        displayExtraHomeCount(homeExtraPoint);
     }
 
     /**
@@ -57,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
     public void homeTwoPoints(View view) {
         homeTeam = homeTeam +2;
         displayHomeScore(homeTeam);
+
+        homeSafetiesPoint = homeSafetiesPoint + 1;
+        displaySafetiesHomeCount(homeSafetiesPoint);
     }
 
     /**
@@ -81,6 +103,10 @@ public class MainActivity extends AppCompatActivity {
     public void visitorOnePoint(View view) {
         visitingTeam = visitingTeam + 1;
         displayVisitorScore(visitingTeam);
+
+        visitorExtraPoint = visitorExtraPoint + 1;
+        displayExtraVistorCount(visitorExtraPoint);
+
     }
 
     /**
@@ -89,6 +115,9 @@ public class MainActivity extends AppCompatActivity {
     public void visitorTwoPoints(View view) {
         visitingTeam = visitingTeam +2;
         displayVisitorScore(visitingTeam);
+
+        visitorSafetiesPoint = visitorSafetiesPoint + 1;
+        displaySafetiesVisitorCount(visitorSafetiesPoint);
     }
 
     /**
@@ -120,6 +149,36 @@ public class MainActivity extends AppCompatActivity {
      */
     public void displayVisitorScore(int score) {
         TextView scoreView = (TextView) findViewById(R.id.visitor_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     *
+     * Display How Many Extra Points Home Team Received
+     */
+
+    public void displayExtraHomeCount(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.extraPointCountHome);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public  void displaySafetiesHomeCount(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.safetiesCountHome);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     *
+     * Display How Many Extra Points Visitor Team Received
+     */
+
+    public void displayExtraVistorCount(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.extraPointCountVisitor);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public  void displaySafetiesVisitorCount(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.safetiesCountVisitor);
         scoreView.setText(String.valueOf(score));
     }
 
